@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="16dp">
+
+
+        <RelativeLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_dimension">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/height_dimension"
+                android:layout_height="@dimen/height_dimension"
+                android:src="@mipmap/ic_launcher" />
+
+
+            <TextView
+                android:id="@+id/title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Ahmed Lotfy High School " />
+
+            <TextView
+                android:id="@+id/location_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/title_text_view"
+                android:layout_alignStart="@+id/title_text_view"
+                android:layout_below="@+id/title_text_view"
+                android:textSize="13sp"
+                tools:text="Schools St next to the railway station " />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
